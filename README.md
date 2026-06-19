@@ -37,6 +37,26 @@ See the in-app About / Plan screen for details.
 
 ---
 
+## 📸 Screenshots
+
+### macOS app
+
+<p align="center">
+  <img src="assets/screenshots/macOS_RemotePairing.png" width="400" alt="Remote pairing on macOS">
+  &nbsp;
+  <img src="assets/screenshots/macOS_InputMonitor.png" width="400" alt="Input monitor on macOS">
+</p>
+
+### PadLink Remote (iOS)
+
+<p align="center">
+  <img src="assets/screenshots/iOS_GamePad.PNG" width="400" alt="Gamepad layout">
+  &nbsp;
+  <img src="assets/screenshots/iOS_CarDriving.PNG" width="400" alt="Car Driving layout">
+</p>
+
+---
+
 ## 📱 PadLink Remote — use your phone as a controller
 
 No physical gamepad? **PadLink Remote** (iOS) turns your phone into a wireless controller. It
@@ -68,6 +88,34 @@ now; Android planned.)_
 **Don't see your controller?** PadLink can likely support it — open a
 **[New Controller Support request](https://github.com/nimets-dev/PadLink-Community/issues/new?template=controller_support.yml)**
 and include the details the form asks for (we use them to add a decode profile for your pad).
+
+---
+
+## 🗺️ Roadmap
+
+### ✅ Available now
+- 🖥️ macOS menu-bar app & dashboard
+- ⌨️ Keyboard & Mouse mode
+- 🎮 Up to 4 controllers at once, with reusable mapping profiles
+- 📱 PadLink Remote (iOS) — Gamepad & Car Driving layouts
+- 📳 Haptics & trigger rumble
+- ✏️ Drag-to-edit layout editor & QR / IP pairing
+- 💎 PadLink Pro
+
+### 🔜 Coming soon
+- 🕹️ Virtual Gamepad mode (pending Apple driver approval)
+- 🔄 Automatic updates
+
+### 🔭 Planned / future
+- 💻 Windows app
+- 🤖 PadLink Remote for Android
+- ➕ More controllers
+- ✈️ More Remote layouts & skins (incl. Airplane type)
+- 🚀 Launch at login
+
+> Timelines aren't promises. Want something prioritized?
+> [Request a feature](https://github.com/nimets-dev/PadLink-Community/issues/new?template=feature_request.yml)
+> or join the [Discussions](https://github.com/nimets-dev/PadLink-Community/discussions).
 
 ---
 
