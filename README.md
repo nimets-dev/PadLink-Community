@@ -14,12 +14,16 @@ directly and re-presents it to macOS, the way Steam Input does, so your games fi
 
 ## ⬇️ Download
 
-**[Download the latest version →](https://github.com/nimets-dev/PadLink-Community/releases/latest)**
+<p align="center">
+  <img alt="Available soon" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=2500&pause=700&color=3FB950&center=true&vCenter=true&width=440&height=45&lines=Available+soon...;Coming+soon+to+macOS;Windows+coming+later">
+</p>
 
-- **macOS** — available now (Apple Silicon + Intel). Notarized by Apple.
-- **Windows** — planned.
+> ⏳ **Available soon** — PadLink is getting ready for its first public release. The download link will appear here when it's ready.
 
-After downloading, open the installer and drag PadLink to your Applications folder.
+- 🖥️ **macOS** — coming soon (Apple Silicon + Intel, notarized by Apple)
+- 💻 **Windows** — planned
+
+_⭐ Star or watch this repo to know the moment it drops._
 
 ---
 
