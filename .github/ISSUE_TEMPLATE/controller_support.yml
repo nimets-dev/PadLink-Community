@@ -1,0 +1,92 @@
+name: 🎮 New Controller Support Request
+description: Ask us to add support for a controller PadLink doesn't recognize yet.
+title: "[Controller]: "
+labels: ["controller-support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping expand PadLink's controller support! To add a decode profile for
+        your controller we need a few technical details about how it reports input. The more
+        complete this is, the faster we can add it.
+  - type: input
+    id: controller-name
+    attributes:
+      label: Controller name
+      description: The brand / marketing name printed on the device or its packaging.
+      placeholder: "e.g. SHANWAN Android Gamepad"
+    validations:
+      required: true
+  - type: input
+    id: vid
+    attributes:
+      label: USB Vendor ID (VID)
+      description: From `hidutil list` (the `VendorID` column), in hex.
+      placeholder: "0x2563"
+    validations:
+      required: true
+  - type: input
+    id: pid
+    attributes:
+      label: USB Product ID (PID)
+      description: From `hidutil list` (the `ProductID` column), in hex.
+      placeholder: "0x0526"
+    validations:
+      required: true
+  - type: input
+    id: product-string
+    attributes:
+      label: Product string
+      description: The `Product` name macOS reports for the device (also in `hidutil list`).
+      placeholder: "Android Gamepad"
+  - type: dropdown
+    id: connection
+    attributes:
+      label: How does it connect?
+      options:
+        - USB cable
+        - Bluetooth
+        - 2.4GHz USB dongle
+        - Other / not sure
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: Operating system & version
+      placeholder: "macOS 15.5 (Apple Silicon)"
+    validations:
+      required: true
+  - type: textarea
+    id: hidutil
+    attributes:
+      label: "`hidutil list` output"
+      description: |
+        Run this in Terminal and paste the line(s) for your controller:
+        `hidutil list`
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: hidreader
+    attributes:
+      label: Input report samples (very helpful)
+      description: |
+        If you can, capture how the controller's raw HID reports change as you press buttons
+        and move sticks. This is what lets us decode it. If you have a capture tool's output
+        (changed bytes highlighted per press), paste it here. One button/stick per line is ideal.
+      render: text
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Photos of the controller, modes it has (e.g. X-input/D-input switch), etc.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked the README's supported list and this controller isn't there yet.
+          required: true
+        - label: I searched existing issues and there's no open request for this controller.
+          required: true

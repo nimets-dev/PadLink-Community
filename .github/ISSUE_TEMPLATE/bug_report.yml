@@ -1,0 +1,78 @@
+name: 🐛 Bug Report
+description: Something isn't working as expected.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill in the details below so we can
+        reproduce it quickly. For quick questions, use [Discussions](https://github.com/nimets-dev/PadLink-Community/discussions) instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug, and what you expected to happen instead.
+      placeholder: When I press X, the game sees nothing / the app crashes / ...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we trigger the bug?
+      placeholder: |
+        1. Plug in controller '...'
+        2. Set mode to '...'
+        3. Open game '...'
+        4. See error
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Which mode were you using?
+      options:
+        - Keyboard & Mouse
+        - Gamepad
+        - Both
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: PadLink version
+      description: Shown in the app's About tab (e.g. "1.0 (1)").
+      placeholder: "1.0 (1)"
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: Operating system & version
+      description: e.g. macOS 15.5 (Apple Silicon) or Windows 11 23H2.
+      placeholder: "macOS 15.5 (Apple Silicon)"
+    validations:
+      required: true
+  - type: input
+    id: controller
+    attributes:
+      label: Controller (if relevant)
+      description: Name and, if known, USB VID:PID (see `hidutil list`).
+      placeholder: "SHANWAN Android Gamepad (0x2563:0x0526)"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: |
+        Paste any relevant output. On macOS you can collect logs with:
+        `log show --last 2m --info --predicate 'subsystem == "com.nimets.PadLink"'`
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this isn't a duplicate.
+          required: true
