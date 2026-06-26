@@ -75,4 +75,4 @@ without regard to its conflict-of-laws principles.
 ## 11. Contact
 
 Questions about this Agreement? Contact us at
-[nimets.dev@gmail.com](mailto:nimets.dev@gmail.com).
+[support@nimets.com](mailto:support@nimets.com).

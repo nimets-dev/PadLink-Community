@@ -5,7 +5,7 @@
 If you discover a security or privacy issue in PadLink, **please do not open a public issue.**
 Instead, report it privately:
 
-- **Email:** [nimets.dev@gmail.com](mailto:nimets.dev@gmail.com)
+- **Email:** [support@nimets.com](mailto:support@nimets.com)
 - **Telegram:** [@nimets_support](https://t.me/nimets_support)
 
 Please include:

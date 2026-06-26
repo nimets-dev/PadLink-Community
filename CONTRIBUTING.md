@@ -25,4 +25,4 @@ profile for your pad.
 
 ## Other ways to reach us
 - **Telegram:** [@nimets_support](https://t.me/nimets_support)
-- **Email:** [nimets.dev@gmail.com](mailto:nimets.dev@gmail.com)
+- **Email:** [support@nimets.com](mailto:support@nimets.com)

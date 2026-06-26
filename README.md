@@ -133,7 +133,7 @@ and include the details the form asks for (we use them to add a decode profile f
 Faster, direct help:
 
 - **Telegram:** [@nimets_support](https://t.me/nimets_support)
-- **Email:** [nimets.dev@gmail.com](mailto:nimets.dev@gmail.com)
+- **Email:** [support@nimets.com](mailto:support@nimets.com)
 - **Website:** [padlink.nimets.com](https://padlink.nimets.com)
 
 ---
