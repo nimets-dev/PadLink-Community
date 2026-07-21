@@ -1,10 +1,14 @@
 # PadLink
 
-**Make game controllers that macOS doesn't natively recognize work like they should.**
+**Make game controllers your computer doesn't recognize work like they should — or use your
+phone as one.**
 
 Some USB/Bluetooth gamepads are perfectly valid HID devices, but their report descriptors
 aren't on macOS's recognized list — so games ignore them. PadLink reads the controller
-directly and re-presents it to macOS, the way Steam Input does, so your games finally see it.
+directly and re-presents it to the OS, the way Steam Input does, so your games finally see it.
+
+No controller at all? **PadLink Remote** turns your phone into one over Wi-Fi — including a full
+racing cockpit with a steering wheel, pedals, and a shifter.
 
 > This is the **public community & downloads** hub for PadLink. Use it to **download the app**,
 > **report bugs**, **request features**, and **request support for a new controller**. (The
@@ -15,13 +19,13 @@ directly and re-presents it to macOS, the way Steam Input does, so your games fi
 ## ⬇️ Download
 
 <p align="center">
-  <img alt="Available soon" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=2500&pause=700&color=3FB950&center=true&vCenter=true&width=440&height=45&lines=Available+soon...;Coming+soon+to+macOS;Windows+coming+later">
+  <img alt="Available soon" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=2500&pause=700&color=3FB950&center=true&vCenter=true&width=440&height=45&lines=Available+soon...;Coming+soon+to+macOS;Windows+in+final+testing">
 </p>
 
 > ⏳ **Available soon** — PadLink is getting ready for its first public release. The download link will appear here when it's ready.
 
 - 🖥️ **macOS** — coming soon (Apple Silicon + Intel, notarized by Apple)
-- 💻 **Windows** — planned
+- 💻 **Windows** — built and in final testing (Windows 10/11, 64-bit)
 
 _⭐ Star or watch this repo to know the moment it drops._
 
@@ -29,12 +33,20 @@ _⭐ Star or watch this repo to know the moment it drops._
 
 ## What it does
 
-PadLink reads your physical controller once and routes its input through one of two output modes:
+PadLink takes your input — a physical controller, or your phone via **PadLink Remote** — and
+routes it through one of two output modes:
 
 - **Keyboard & Mouse mode** — maps controller buttons/sticks to keystrokes and mouse movement.
-  Works with any game or app. Needs only macOS Accessibility permission.
-- **Gamepad mode** — presents a standard virtual controller to macOS so games see a real
+  Works with any game or app. On macOS it needs only the Accessibility permission — no driver.
+- **Gamepad mode** — presents a standard virtual controller to the OS so games see a real
   gamepad (with full stick/trigger support and on-screen glyphs).
+
+Each connected controller is configured independently — its own mode, its own mapping profile,
+its own name — and PadLink remembers it across reconnects.
+
+> **On Windows**, PadLink is **phone-driven**: PadLink Remote is the input source, presented to
+> games as a real virtual gamepad or as keyboard/mouse. Windows already recognizes most USB pads
+> natively, so it doesn't need the physical-controller rescue that macOS does.
 
 A free tier covers the essentials; **PadLink Pro** unlocks multi-controller support and more.
 See the in-app About / Plan screen for details.
@@ -72,13 +84,18 @@ keyboard/mouse mode).
 - **Multiple layouts** — a standard **gamepad** layout, plus a **Car Driving** cockpit for racing
   games: a rotating steering wheel (or optional tilt/motion steering), gas and brake pedals, a
   sequential gear shifter, and a handbrake. Switch to the surface that fits what you're playing.
-- **Pair in seconds** — scan a QR code or enter the Mac's IP; reconnect to known Macs with one tap.
+- **Switch surfaces mid-game** — hold one button to flip between the gamepad and the cockpit, so
+  you have a familiar pad for the menus a game drops you into between races.
+- **Driving button profiles** — the cockpit's buttons aren't fixed. Pick a control-style preset or
+  build your own, and every control shows the button it actually sends, labelled the way your game
+  uses it (DRIFT, NITRO, …) instead of a caption that lies.
+- **Pair in seconds** — scan a QR code or enter the host's IP; reconnect to known hosts with one tap.
 - **Feels real** — haptic vibration (including live trigger rumble) and optional click sounds.
 - **Make it yours** — drag, resize, and restyle the on-screen controls with the built-in layout editor.
 - **Stays awake** — keeps the phone screen on while you play.
 
-Get **PadLink Remote** from the App Store, open PadLink on your Mac, and pair. _(iOS available
-now; Android planned.)_
+Get **PadLink Remote**, open PadLink on your computer, and pair. _(iOS available now; the Android
+version is built and in final testing.)_
 
 ---
 
@@ -89,6 +106,9 @@ now; Android planned.)_
 | SHANWAN "Android Gamepad" | `0x2563:0x0526` | ✅ Supported |
 | "PS3/PC Gamepad" clone | `0x2563:0x0575` | ✅ Supported |
 
+_This list is for **macOS**, where PadLink reads the pad directly. On Windows, controllers are
+handled by the OS — PadLink Remote (your phone) is the input source there._
+
 **Don't see your controller?** PadLink can likely support it — open a
 **[New Controller Support request](https://github.com/nimets-dev/PadLink-Community/issues/new?template=controller_support.yml)**
 and include the details the form asks for (we use them to add a decode profile for your pad).
@@ -97,25 +117,33 @@ and include the details the form asks for (we use them to add a decode profile f
 
 ## 🗺️ Roadmap
 
-### ✅ Available now
+### ✅ Built & working
 - 🖥️ macOS menu-bar app & dashboard
 - ⌨️ Keyboard & Mouse mode
-- 🎮 Up to 4 controllers at once, with reusable mapping profiles
+- 🎮 Up to 4 controllers at once, each with its own mode and reusable mapping profiles
 - 📱 PadLink Remote (iOS) — Gamepad & Car Driving layouts
+- 🏎️ Driving button profiles — switchable button maps + honest control labels for the cockpit
+- 🔀 Fast surface switch — flip Gamepad ⇄ Car Driving without leaving the game
 - 📳 Haptics & trigger rumble
 - ✏️ Drag-to-edit layout editor & QR / IP pairing
+- 🔐 Connection approval — approve, deny, or block any phone that asks to connect
+- 🔔 Connect notifications & 🚀 launch at login
 - 💎 PadLink Pro
 
-### 🔜 Coming soon
-- 🕹️ Virtual Gamepad mode (pending Apple driver approval)
-- 🔄 Automatic updates
+### 🔜 In testing — next out the door
+- 💻 **Windows app** — feature-complete (virtual Xbox 360 pad, keyboard/mouse, tray app,
+  light/dark themes, one-click driver install). Finishing hardware testing and code signing.
+- 🤖 **PadLink Remote for Android** — built at feature parity with iOS and running on real
+  devices. Finishing the on-device polish pass.
+- 🕹️ **Virtual Gamepad mode on macOS** — code complete; waiting on Apple's driver entitlement approval.
+- 🔄 **Automatic updates** — wired on both platforms, ships with the first public release.
 
 ### 🔭 Planned / future
-- 💻 Windows app
-- 🤖 PadLink Remote for Android
 - ➕ More controllers
-- ✈️ More Remote layouts & skins (incl. Airplane type)
-- 🚀 Launch at login
+- ✈️ More Remote layouts & skins (incl. an **Airplane** type)
+- 🎨 Purchasable wheel & controller skins
+- 📡 Zero-config pairing (no IP or QR needed)
+- 🌍 Play over the internet, not just your local network
 
 > Timelines aren't promises. Want something prioritized?
 > [Request a feature](https://github.com/nimets-dev/PadLink-Community/issues/new?template=feature_request.yml)
