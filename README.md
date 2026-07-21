@@ -27,6 +27,27 @@ racing cockpit with a steering wheel, pedals, and a shifter.
 - 🖥️ **macOS** — coming soon (Apple Silicon + Intel, notarized by Apple)
 - 💻 **Windows** — built and in final testing (Windows 10/11, 64-bit)
 
+<details>
+<summary>💡 <b>Windows may say the installer "isn't commonly downloaded" — here's why, and what to click</b></summary>
+
+<br>
+
+PadLink is new, and Windows hasn't seen enough downloads yet to have built a reputation for it.
+That's all this warning means. It is **not** a virus alert — it's a "we haven't met this file
+before" notice that every small app gets until enough people have installed it.
+
+To continue past it:
+
+- **Edge** — click the **⋯** next to the download → **Keep** → **Keep anyway**
+- **Chrome** — click the **▾** next to the download → **Keep**
+- If a blue **"Windows protected your PC"** screen appears when you run the installer, click
+  **More info** → **Run anyway**
+
+Want to check the file yourself? GitHub publishes a **SHA256** for every release asset; compare it
+with `Get-FileHash .\PadLink-win-Setup.exe` after downloading.
+
+</details>
+
 _⭐ Star or watch this repo to know the moment it drops._
 
 ---
