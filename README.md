@@ -25,7 +25,7 @@ racing cockpit with a steering wheel, pedals, and a shifter.
 > ⏳ **Available soon** — PadLink is getting ready for its first public release. The download link will appear here when it's ready.
 
 - 🖥️ **macOS** — coming soon (Apple Silicon + Intel, notarized by Apple)
-- 💻 **Windows** — built and in final testing (Windows 10/11, 64-bit)
+- 💻 **Windows** — built and in final testing (Windows 10/11 — one installer for both Intel/AMD and ARM)
 
 <details>
 <summary>💡 <b>Windows may say the installer "isn't commonly downloaded" — here's why, and what to click</b></summary>
