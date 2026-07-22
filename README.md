@@ -69,8 +69,14 @@ its own name — and PadLink remembers it across reconnects.
 > games as a real virtual gamepad or as keyboard/mouse. Windows already recognizes most USB pads
 > natively, so it doesn't need the physical-controller rescue that macOS does.
 
-A free tier covers the essentials; **PadLink Pro** unlocks multi-controller support and more.
-See the in-app About / Plan screen for details.
+The **free tier** covers the essentials — **1 controller** at a time, both output modes, all
+mapping profiles, and the PadLink Remote touch gamepad (ad-supported). **PadLink Pro** raises that
+to **4 controllers** at once and adds the **Car Driving** cockpit and an ad-free PadLink Remote.
+
+**Want to try Pro first?** There's an opt-in **7-day free trial** you start from inside the app —
+no card, no sign-up. It unlocks **everything Pro does, including the Car Driving cockpit and the
+ad-free remote**; only the controller count is lower (**2** during the trial, vs 4 on Pro). See the
+in-app About / Plan screen for details.
 
 ---
 
@@ -105,6 +111,8 @@ keyboard/mouse mode).
 - **Multiple layouts** — a standard **gamepad** layout, plus a **Car Driving** cockpit for racing
   games: a rotating steering wheel (or optional tilt/motion steering), gas and brake pedals, a
   sequential gear shifter, and a handbrake. Switch to the surface that fits what you're playing.
+  _(The gamepad layout is free. The Car Driving cockpit needs **Pro** — or the **7-day free
+  trial**, which includes it.)_
 - **Switch surfaces mid-game** — hold one button to flip between the gamepad and the cockpit, so
   you have a familiar pad for the menus a game drops you into between races.
 - **Driving button profiles** — the cockpit's buttons aren't fixed. Pick a control-style preset or
