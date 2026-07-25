@@ -19,13 +19,18 @@ racing cockpit with a steering wheel, pedals, and a shifter.
 ## ⬇️ Download
 
 <p align="center">
-  <img alt="Available soon" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=2500&pause=700&color=3FB950&center=true&vCenter=true&width=440&height=45&lines=Available+soon...;Coming+soon+to+macOS;Windows+in+final+testing">
+  <a href="https://github.com/nimets-dev/PadLink-Community/releases/latest/download/PadLink-osx-Setup.pkg"><img alt="Download for macOS" src="https://img.shields.io/badge/Download-macOS-000000?style=for-the-badge&logo=apple&logoColor=white"></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/nimets-dev/PadLink-Community/releases/latest/download/PadLink-win-Setup.exe"><img alt="Download for Windows" src="https://img.shields.io/badge/Download-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"></a>
 </p>
 
-> ⏳ **Available soon** — PadLink is getting ready for its first public release. The download link will appear here when it's ready.
+<p align="center"><a href="https://github.com/nimets-dev/PadLink-Community/releases/latest"><b>All downloads &amp; release notes →</b></a></p>
 
-- 🖥️ **macOS** — coming soon (Apple Silicon + Intel, notarized by Apple)
-- 💻 **Windows** — built and in final testing (Windows 10/11 — one installer for both Intel/AMD and ARM)
+- 🖥️ **macOS** — **available now** (Apple Silicon + Intel, notarized by Apple). **Keyboard & mouse
+  mode works today**; **virtual-gamepad mode is code-complete and awaiting Apple's DriverKit /
+  Virtual-HID entitlement approval** before it lights up for everyone.
+- 💻 **Windows** — **ready now** (Windows 10/11 — one installer for both Intel/AMD and ARM). Full
+  **virtual Xbox 360 gamepad** *and* keyboard/mouse, driven by your phone via PadLink Remote.
 
 <details>
 <summary>💡 <b>Windows may say the installer "isn't commonly downloaded" — here's why, and what to click</b></summary>
@@ -48,7 +53,7 @@ with `Get-FileHash .\PadLink-win-Setup.exe` after downloading.
 
 </details>
 
-_⭐ Star or watch this repo to know the moment it drops._
+_⭐ Star or watch this repo to catch every update. Both installers auto-update themselves once installed._
 
 ---
 
@@ -102,7 +107,7 @@ in-app About / Plan screen for details.
 
 ## 📱 PadLink Remote — use your phone as a controller
 
-No physical gamepad? **PadLink Remote** (iOS) turns your phone into a wireless controller. It
+No physical gamepad? **PadLink Remote** (iPhone & Android) turns your phone into a wireless controller. It
 shows an on-screen touch gamepad — two sticks, an 8-way D-pad, face buttons, shoulders, and
 travel-based triggers, plus a touchpad mouse mode — and sends your input to the Mac over your
 local network, where it drives the exact same output as a physical pad (gamepad **or**
@@ -123,8 +128,8 @@ keyboard/mouse mode).
 - **Make it yours** — drag, resize, and restyle the on-screen controls with the built-in layout editor.
 - **Stays awake** — keeps the phone screen on while you play.
 
-Get **PadLink Remote**, open PadLink on your computer, and pair. _(iOS available now; the Android
-version is built and in final testing.)_
+Get **PadLink Remote**, open PadLink on your computer, and pair. _(The iPhone & Android apps are
+built at feature parity and submitted — coming to the App Store & Google Play once review clears.)_
 
 ---
 
@@ -146,26 +151,26 @@ and include the details the form asks for (we use them to add a decode profile f
 
 ## 🗺️ Roadmap
 
-### ✅ Built & working
-- 🖥️ macOS menu-bar app & dashboard
+### ✅ Built & shipping
+- 🖥️ macOS app — menu-bar agent & dashboard (keyboard & mouse mode; gamepad mode pending Apple, see below)
+- 💻 Windows app — virtual Xbox 360 gamepad + keyboard/mouse, tray app, light/dark themes, one-click driver install
 - ⌨️ Keyboard & Mouse mode
 - 🎮 Up to 4 controllers at once, each with its own mode and reusable mapping profiles
-- 📱 PadLink Remote (iOS) — Gamepad & Car Driving layouts
+- 📱 PadLink Remote (iPhone & Android) — Gamepad & Car Driving layouts, built at feature parity
 - 🏎️ Driving button profiles — switchable button maps + honest control labels for the cockpit
 - 🔀 Fast surface switch — flip Gamepad ⇄ Car Driving without leaving the game
 - 📳 Haptics & trigger rumble
 - ✏️ Drag-to-edit layout editor & QR / IP pairing
 - 🔐 Connection approval — approve, deny, or block any phone that asks to connect
 - 🔔 Connect notifications & 🚀 launch at login
+- 🔄 Automatic updates on macOS & Windows
 - 💎 PadLink Pro
 
-### 🔜 In testing — next out the door
-- 💻 **Windows app** — feature-complete (virtual Xbox 360 pad, keyboard/mouse, tray app,
-  light/dark themes, one-click driver install). Finishing hardware testing and code signing.
-- 🤖 **PadLink Remote for Android** — built at feature parity with iOS and running on real
-  devices. Finishing the on-device polish pass.
-- 🕹️ **Virtual Gamepad mode on macOS** — code complete; waiting on Apple's driver entitlement approval.
-- 🔄 **Automatic updates** — wired on both platforms, ships with the first public release.
+### 🔜 In progress — next out the door
+- 📱 **PadLink Remote — App Store & Google Play** — the iPhone and Android apps are both built at
+  feature parity and submitted; they go live the moment Apple and Google finish their review.
+- 🕹️ **Virtual Gamepad mode on macOS** — code-complete; waiting on Apple's DriverKit / Virtual-HID
+  entitlement approval before it ships. Keyboard & mouse mode already works on macOS today.
 
 ### 🔭 Planned / future
 - ➕ More controllers
