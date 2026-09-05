@@ -26,11 +26,23 @@ racing cockpit with a steering wheel, pedals, and a shifter.
 
 <p align="center"><a href="https://github.com/nimets-dev/PadLink-Community/releases/latest"><b>All downloads &amp; release notes →</b></a></p>
 
+<p align="center"><b>📱 And the phone app — <i>PadLink Remote</i>, free:</b></p>
+
+<p align="center">
+  <a href="https://apps.apple.com/app/id6794668210"><img alt="PadLink Remote on the App Store" src="https://img.shields.io/badge/PadLink%20Remote-App%20Store-0D96F6?style=for-the-badge&logo=appstore&logoColor=white"></a>
+  &nbsp;&nbsp;
+  <a href="https://play.google.com/store/apps/details?id=com.nimets.padlink.remote"><img alt="PadLink Remote on Google Play" src="https://img.shields.io/badge/PadLink%20Remote-Google%20Play-414141?style=for-the-badge&logo=googleplay&logoColor=white"></a>
+</p>
+
 - 🖥️ **macOS** — **available now** (Apple Silicon + Intel, notarized by Apple). **Keyboard & mouse
   mode works today**; **virtual-gamepad mode is code-complete and awaiting Apple's DriverKit /
   Virtual-HID entitlement approval** before it lights up for everyone.
 - 💻 **Windows** — **ready now** (Windows 10/11 — one installer for both Intel/AMD and ARM). Full
   **virtual Xbox 360 gamepad** *and* keyboard/mouse, driven by your phone via PadLink Remote.
+- 📱 **PadLink Remote** — **out now on both stores**, free:
+  **[App Store](https://apps.apple.com/app/id6794668210)** (iPhone, iOS 16+) and
+  **[Google Play](https://play.google.com/store/apps/details?id=com.nimets.padlink.remote)**
+  (Android 8+). It's a companion to the desktop app — install PadLink on your computer first.
 
 <details>
 <summary>💡 <b>Windows may say the installer "isn't commonly downloaded" — here's why, and what to click</b></summary>
@@ -128,8 +140,12 @@ keyboard/mouse mode).
 - **Make it yours** — drag, resize, and restyle the on-screen controls with the built-in layout editor.
 - **Stays awake** — keeps the phone screen on while you play.
 
-Get **PadLink Remote**, open PadLink on your computer, and pair. _(The iPhone & Android apps are
-built at feature parity and submitted — coming to the App Store & Google Play once review clears.)_
+**Get PadLink Remote — it's free and out now:**
+**[⬇️ App Store (iPhone)](https://apps.apple.com/app/id6794668210)** ·
+**[⬇️ Google Play (Android)](https://play.google.com/store/apps/details?id=com.nimets.padlink.remote)**
+
+Install it, open PadLink on your computer, and pair. Both versions are built at feature parity, so
+it doesn't matter which phone you bring.
 
 ---
 
@@ -156,7 +172,9 @@ and include the details the form asks for (we use them to add a decode profile f
 - 💻 Windows app — virtual Xbox 360 gamepad + keyboard/mouse, tray app, light/dark themes, one-click driver install
 - ⌨️ Keyboard & Mouse mode
 - 🎮 Up to 4 controllers at once, each with its own mode and reusable mapping profiles
-- 📱 PadLink Remote (iPhone & Android) — Gamepad & Car Driving layouts, built at feature parity
+- 📱 PadLink Remote — **on the [App Store](https://apps.apple.com/app/id6794668210) and
+  [Google Play](https://play.google.com/store/apps/details?id=com.nimets.padlink.remote)** — Gamepad
+  & Car Driving layouts, iPhone and Android at feature parity
 - 🏎️ Driving button profiles — switchable button maps + honest control labels for the cockpit
 - 🔀 Fast surface switch — flip Gamepad ⇄ Car Driving without leaving the game
 - 📳 Haptics & trigger rumble
@@ -167,8 +185,6 @@ and include the details the form asks for (we use them to add a decode profile f
 - 💎 PadLink Pro
 
 ### 🔜 In progress — next out the door
-- 📱 **PadLink Remote — App Store & Google Play** — the iPhone and Android apps are both built at
-  feature parity and submitted; they go live the moment Apple and Google finish their review.
 - 🕹️ **Virtual Gamepad mode on macOS** — code-complete; waiting on Apple's DriverKit / Virtual-HID
   entitlement approval before it ships. Keyboard & mouse mode already works on macOS today.
 
