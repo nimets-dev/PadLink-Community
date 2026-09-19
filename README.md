@@ -34,9 +34,10 @@ racing cockpit with a steering wheel, pedals, and a shifter.
   <a href="https://play.google.com/store/apps/details?id=com.nimets.padlink.remote"><img alt="PadLink Remote on Google Play" src="https://img.shields.io/badge/PadLink%20Remote-Google%20Play-414141?style=for-the-badge&logo=googleplay&logoColor=white"></a>
 </p>
 
-- 🖥️ **macOS** — **available now** (Apple Silicon + Intel, notarized by Apple). **Keyboard & mouse
-  mode works today**; **virtual-gamepad mode is code-complete and awaiting Apple's DriverKit /
-  Virtual-HID entitlement approval** before it lights up for everyone.
+- 🖥️ **macOS** — **available now, 1.0.0** (macOS 13+, Apple Silicon + Intel, notarized by Apple).
+  **Both modes ship**: the **virtual gamepad** — your controller or phone shows up as a real
+  DualShock 4 in any game, via a notarized DriverKit driver you approve once — *and* keyboard &
+  mouse. Apple approved the driver entitlements, so there is nothing left "coming soon" here.
 - 💻 **Windows** — **ready now** (Windows 10/11 — one installer for both Intel/AMD and ARM). Full
   **virtual Xbox 360 gamepad** *and* keyboard/mouse, driven by your phone via PadLink Remote.
 - 📱 **PadLink Remote** — **out now on both stores**, free:
@@ -65,6 +66,29 @@ with `Get-FileHash .\PadLink-win-Setup.exe` after downloading.
 
 </details>
 
+<details>
+<summary>💡 <b>macOS asks you to allow a driver / system extension — here's what to click</b></summary>
+
+<br>
+
+Gamepad mode on macOS uses a **DriverKit driver** that is signed and notarized by Apple. The first
+time you pick Gamepad mode, macOS asks you to allow it — **once**:
+
+- macOS opens **System Settings ▸ General ▸ Login Items & Extensions**. Under **Driver Extensions**
+  (you may need to click the **ⓘ**), turn on **PadLink**. PadLink picks it up on its own — no
+  restart needed for a first install.
+- **After a PadLink update**, the new driver takes over at your **next restart**. PadLink shows
+  *"Restart to update"* until then and keeps working with the current driver meanwhile.
+- The driver only loads when PadLink lives in your **Applications** folder. The installer puts it
+  there; if you moved it (or updated from 0.9.0's "Install for me only"), PadLink offers to move
+  itself back with one click.
+- **Keyboard & mouse mode** doesn't use the driver — it needs only the Accessibility permission.
+
+Nothing about SIP, Recovery mode, or kernel extensions is involved: this is a standard, user-space
+system extension, and macOS loads it with all security settings at their defaults.
+
+</details>
+
 _⭐ Star or watch this repo to catch every update. Both installers auto-update themselves once installed._
 
 ---
@@ -77,7 +101,10 @@ routes it through one of two output modes:
 - **Keyboard & Mouse mode** — maps controller buttons/sticks to keystrokes and mouse movement.
   Works with any game or app. On macOS it needs only the Accessibility permission — no driver.
 - **Gamepad mode** — presents a standard virtual controller to the OS so games see a real
-  gamepad (with full stick/trigger support and on-screen glyphs).
+  gamepad (with full stick/trigger support and on-screen glyphs): a **DualShock 4** on macOS
+  (via PadLink's own notarized DriverKit driver, approved once in System Settings) and an
+  **Xbox 360** pad on Windows (via ViGEmBus). The virtual pad appears the moment a controller is
+  routed to it and disappears when it leaves — nothing idles in your games' controller list.
 
 Each connected controller is configured independently — its own mode, its own mapping profile,
 its own name — and PadLink remembers it across reconnects.
@@ -99,20 +126,20 @@ in-app About / Plan screen for details.
 
 ## 📸 Screenshots
 
-### macOS app
+### PadLink (desktop)
 
 <p align="center">
-  <img src="assets/screenshots/macOS_RemotePairing.png" width="400" alt="Remote pairing on macOS">
+  <img src="assets/screenshots/macOS_RemotePairing.png" width="400" alt="PadLink desktop app — pairing a phone with a QR code (shown on macOS)">
   &nbsp;
-  <img src="assets/screenshots/macOS_InputMonitor.png" width="400" alt="Input monitor on macOS">
+  <img src="assets/screenshots/macOS_InputMonitor.png" width="400" alt="PadLink desktop app — live input monitor (shown on macOS)">
 </p>
 
-### PadLink Remote (iOS)
+### PadLink Remote (phone)
 
 <p align="center">
-  <img src="assets/screenshots/iOS_GamePad.PNG" width="400" alt="Gamepad layout">
+  <img src="assets/screenshots/iOS_GamePad.PNG" width="400" alt="PadLink Remote — touch gamepad layout (shown on iPhone)">
   &nbsp;
-  <img src="assets/screenshots/iOS_CarDriving.PNG" width="400" alt="Car Driving layout">
+  <img src="assets/screenshots/iOS_CarDriving.PNG" width="400" alt="PadLink Remote — Car Driving cockpit (shown on iPhone)">
 </p>
 
 ---
@@ -168,7 +195,8 @@ and include the details the form asks for (we use them to add a decode profile f
 ## 🗺️ Roadmap
 
 ### ✅ Built & shipping
-- 🖥️ macOS app — menu-bar agent & dashboard (keyboard & mouse mode; gamepad mode pending Apple, see below)
+- 🖥️ macOS app — menu-bar agent & dashboard, **virtual DualShock 4 gamepad** (Apple-notarized
+  DriverKit driver, shipped in 1.0.0) + keyboard/mouse
 - 💻 Windows app — virtual Xbox 360 gamepad + keyboard/mouse, tray app, light/dark themes, one-click driver install
 - ⌨️ Keyboard & Mouse mode
 - 🎮 Up to 4 controllers at once, each with its own mode and reusable mapping profiles
@@ -183,10 +211,6 @@ and include the details the form asks for (we use them to add a decode profile f
 - 🔔 Connect notifications & 🚀 launch at login
 - 🔄 Automatic updates on macOS & Windows
 - 💎 PadLink Pro
-
-### 🔜 In progress — next out the door
-- 🕹️ **Virtual Gamepad mode on macOS** — code-complete; waiting on Apple's DriverKit / Virtual-HID
-  entitlement approval before it ships. Keyboard & mouse mode already works on macOS today.
 
 ### 🔭 Planned / future
 - ➕ More controllers
